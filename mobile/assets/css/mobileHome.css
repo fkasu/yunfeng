@@ -1,0 +1,43 @@
+
+/*轮播图样式*/
+.home .slideStyle {
+    border: none;
+    height: 30%;
+}
+
+.home .box img {
+    width: 100%;
+    height: 100%;
+}
+
+/*题型样式*/
+.home .has-banner {
+    z-index: -1;
+    top: 36.5% !important;
+    bottom: 50px;
+}
+
+.home .firstPageContent img {
+    width: 40%;
+    margin-left: 12%;
+}
+
+.home .firstPageContent span {
+    margin-left: 20%;
+}
+
+.home .firstPageContent a {
+    border-right: 0px;
+    border-left: 0px;
+    padding: 7.5% 0%;
+}
+.home .firstPageContent a:first-child{
+    border-top: 0px;
+}
+.home .firstPageContent a:last-child{
+    border-bottom: 0px;
+}
+.home .topicTypePage {
+    margin-top: 63%;
+    height: 57%;
+}

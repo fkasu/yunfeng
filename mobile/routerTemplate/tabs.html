@@ -1,0 +1,14 @@
+<ion-tabs class="tabs-positive tabs-icon-top" ng-click="bannerRun()" ng-class="{'tabs-item-hide': $root.hideTabs}">
+<ion-tab title="首页" icon="ion-android-home" href="#/tab/mobileHome">
+    <!--准备显示ion-view-->
+    <ion-nav-view name="mobileHome-tab"></ion-nav-view>
+</ion-tab>
+<ion-tab title="浏览历史" icon="ion-android-list" href="#/tab/history">
+    <ion-nav-view name="history-tab"></ion-nav-view>
+</ion-tab>
+<ion-tab title="我的" icon="ion-android-person" href="#/tab/my">
+    <ion-nav-view name="my-tab"></ion-nav-view>
+</ion-tab>
+</ion-tabs>
+
+

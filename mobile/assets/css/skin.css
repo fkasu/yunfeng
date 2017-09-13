@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*中间内容区样式*/
+.skin label {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.item-radio .item-content{
+    padding: 5%;
+}
+.item-radio .radio-icon{
+    padding-right: 6%;
+}

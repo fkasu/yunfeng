@@ -1,0 +1,75 @@
+<html ng-app="mobileApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>云峰题库</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/mobileHome.css">
+    <link rel="stylesheet" href="assets/css/subjectPage.css">
+    <link rel="stylesheet" href="assets/css/answer.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/my.css">
+    <link rel="stylesheet" href="assets/css/setting.css">
+    <link rel="stylesheet" href="assets/css/skin.css">
+    <link rel="stylesheet" href="assets/css/history.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../lib/ionic-v1.0.1/css/ionic.min.css"/>
+    <!--Jquery-->
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <!--ionic-->
+    <script src="../lib/ionic-v1.0.1/js/ionic.bundle.min.js"></script>
+    <!--Angular模块-->
+    <script src="app.js"></script>
+    <!--机型配置文件-->
+    <script src="config/config.js"></script>
+    <!--Angular路由-->
+    <script src="run/run.js"></script>
+    <script src="router/uiRouter.js"></script>
+    <!--服务-->
+    <script src="server/basePath.js"></script>
+    <script src="server/bannerServer.js"></script>
+    <script src="server/topicTypeServer.js"></script>
+    <script src="server/answerServer.js"></script>
+    <script src="server/contactServer.js"></script>
+    <script src="server/historyServer.js"></script>
+    <script src="server/myServer.js"></script>
+    <script src="server/settingServer.js"></script>
+    <script src="server/skinServer.js"></script>
+    <script src="server/subjectServer.js"></script>
+    <script src="server/infoServer.js"></script>
+    <!--Angular自定义指令-->
+    <script src="directive/hideTabs.js"></script>
+    <script src="directive/yunfengBanner.js"></script>
+    <script src="directive/yunfengTopicType.js"></script>
+    <script src="directive/yunfengAnswer.js"></script>
+    <script src="directive/yunfengContact.js"></script>
+    <script src="directive/yunfengHistory.js"></script>
+    <script src="directive/yunfengMy.js"></script>
+    <script src="directive/yunfengSetting.js"></script>
+    <script src="directive/yunfengSkin.js"></script>
+    <script src="directive/yunfengSubjectPage.js"></script>
+    <!--控制器-->
+    <script src="controller/mobileHomeCtrl.js"></script>
+    <script src="controller/answerCtrl.js"></script>
+</head>
+
+<body ng-controller="mobileHomeCtrl">
+
+
+<ion-nav-bar class="bar-positive nav-title-slide-ios7" ng-click="bannerRun()">
+
+    <ion-nav-back-button class="button-clear">
+        <i class="ion-ios-arrow-left"></i>
+    </ion-nav-back-button>
+
+</ion-nav-bar>
+
+
+<ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+
+</body>
+
+
+</html>

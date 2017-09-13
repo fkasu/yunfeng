@@ -1,0 +1,27 @@
+<ion-scroll style="height: 100%" class="accordion" id="accordion2">
+    <div class="list">
+        <div class="accordion-group" ng-repeat="item in imgIonData">
+            <div class="accordion-heading">
+                <a class="accordion-toggle item item-icon-left row" data-toggle="collapse" data-parent="#accordion2" href="">
+                    <i class="icon col-25"><img src="{{item.imgIon}}"></i>
+                    <span class="col-75">{{item.name}}</span>
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <div class="list">
+                        <a class="item item-icon-left row" href="#tab/answerHistory" ng-repeat="item1 in item.browse">
+                            <span class="col-50">{{item1.topic}}</span>
+                            <span class="item-note col-50">
+                                {{item1.subject}}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-scroll>
+
+
+

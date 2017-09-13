@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.setting .bar-footer {
+    background: #c53f46 !important;
+    color: #ffffff;
+}
+
+.popup-buttons button {
+    color: #FFFFFF;
+    background-color: #c53f46 !important;
+    border: none !important;
+}

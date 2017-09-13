@@ -1,0 +1,53 @@
+body{
+    background-color: #34cb84;
+}
+.slider {
+    height: 100%;
+}
+.slider-slide {
+    color: #000;
+    background-color: #fff; text-align: center;
+    font-family: "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica, Arial,
+    "Lucida Grande",
+    sans-serif;
+    font-weight: 300;
+}
+.box{
+    height:100%;
+}
+.box h1{
+    position:relative; top:50%; transform:translateY(-50%);
+}
+
+
+ion-slide img{
+    width:100%;
+    height: 100%;
+}
+ion-slide-box{
+    position: relative;
+}
+.guide-jump{
+    width:11%;
+    position: absolute;
+    top:2%;
+    right: 5%;
+
+}
+.guide-welcome4{
+    position: relative;
+}
+.guide-experience{
+    width:30%;
+    height: 5%;
+    position: absolute;
+    bottom:10%;
+    left: 35%;
+}
+.tabs a:hover,.tabs a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+}

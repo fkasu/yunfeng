@@ -1,0 +1,39 @@
+<ion-content class="has-header">
+    <div class="contact">
+        <ul ng-repeat="item in datas">
+            <li>{{item.name}}:{{item.info}}</li>
+        </ul>
+    </div>
+    <div class="score list">
+        <div class="item">
+            <div class="row">
+                <div class="col-50">
+                    <span>应用评分</span>
+                </div>
+                <div class="col-50">
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                </div>
+            </div>
+        </div>
+        <a class="item" ng-click="showPopup()">
+            <span>意见反馈</span>
+        </a>
+    </div>
+</ion-content>
+
+
+<script>
+    $(function () {
+
+        $('.score .icon').on('click', function () {
+            $(this).prevAll().css('color', 'yellow');
+            $(this).nextAll().css('color', '#ccc');
+            $(this).css('color', 'yellow');
+        })
+    });
+
+</script>

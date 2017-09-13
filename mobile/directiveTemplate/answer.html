@@ -1,0 +1,53 @@
+
+<ion-content has-header="true" class="topicPane"  ng-controller="answerCtrl">
+    <div class="row">
+        <div class="col-25 text-center"><p class="topicType">单选题</p></div>
+        <div class="col-75 text-left">
+            <ul >
+                <li>{{result.currentItem+1}}.{{result.data[result.currentItem].title}}</li>
+                <li>{{result.data[result.currentItem].optionA}}</li>
+                <li>{{result.data[result.currentItem].optionB}}</li>
+                <li>{{result.data[result.currentItem].optionC}}</li>
+                <li>{{result.data[result.currentItem].optionD}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topicPagination text-center">
+        <div>
+            <nav>
+                <ul class="pagination">
+                    <li ng-click="result.pre()"><a href="#"><i class="icon ion-ios-arrow-left"></i></a></li>
+                    <li ng-click="result.now(1)"><a href="#">1</a></li>
+                    <li ng-click="result.now(2)"><a href="#">2</a></li>
+                    <li ng-click="result.now(3)"><a href="#">3</a></li>
+                    <li ng-click="result.now(4)"><a href="#">4</a></li>
+                    <li ng-click="result.now(5)"><a href="#">5</a></li>
+                    <li ng-click="result.now(6)"><a href="#">6</a></li>
+                    <li ng-click="result.now(7)"><a href="#">7</a></li>
+                    <li ng-click="result.next()"><a href="#"><i class="icon ion-ios-arrow-right"></i></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <nav>
+                <ul class="pagination">
+                    <li><a id="count">当前题{{result.currentItem+1}}/{{result.data.length}}</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+</ion-content>
+
+<div class="bar bar-footer bar-light" ng-controller="answerCtrl">
+    <div class="row">
+        <div class="col-25 text-center"  ng-click="result.pre()">上一题</div>
+        <div class="col-25 text-center" ng-click="result.next()">下一题</div>
+        <div class="col-25 col-offset-25 text-center" ng-click="showAlert()">答案</div>
+    </div>
+</div>
+

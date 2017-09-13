@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body,.tab-title{
+    font-family: "Microsoft YaHei UI" !important;
+}
+.bar-positive,.tabs-positive>.tabs, .tabs.tabs-positive{
+    background-color: #c53f46 !important;
+    border-color: #c53f46 !important;
+    background-image: none !important;
+}
+/*返回按钮*/
+.button-clear i{
+    margin-left: 5px;
+    font-size: 24px;
+}
+.row{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.tabs a:focus,.tabs a:hover {
+    color:white!important;
+    text-decoration: none!important;
+}

@@ -1,0 +1,20 @@
+
+<div class="firstPage bar bar-header">
+    <img src="assets/img/bg2.png">
+    <div class="item item-input">
+        <input type="text" placeholder="HTML">
+        <i class="icon ion-search placeholder-icon"></i>
+    </div>
+</div>
+
+<ion-content class="has-banner">
+    <div class="firstPageContent">
+        <div class="row row-wrap" >
+            <a class="col-50 firstPageContentPic borderBottom " href="#/tab/answer"  ng-repeat="item in subjectData">
+                <img src="{{item.img}}">
+                <h3>{{item.title}}</h3>
+            </a>
+        </div>
+    </div>
+
+</ion-content>

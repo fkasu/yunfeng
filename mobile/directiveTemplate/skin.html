@@ -1,0 +1,14 @@
+
+<ion-content has-header="true" class="has-header">
+    <div class="skin">
+        <div class="list">
+            <label class="item item-radio" ng-repeat="item in titles">
+                <input type="radio" name="group" value="{{item.name}}" checked="checked">
+                <div class="item-content">
+                    {{item.name}}
+                </div>
+                <i class="radio-icon ion-checkmark"></i>
+            </label>
+        </div>
+    </div>
+</ion-content>

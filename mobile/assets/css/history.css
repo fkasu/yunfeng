@@ -1,0 +1,23 @@
+/*内容样式*/
+.accordion {
+    margin-top: 13%;
+    height: 84%;
+}
+
+.accordion .accordion-heading a {
+    padding: 10%;
+}
+
+.accordion .accordion-body a {
+    padding: 5%;
+}
+
+.accordion .accordion-heading a img {
+    width:35%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.accordion .accordion-heading a span{
+    margin-left:15%;
+}

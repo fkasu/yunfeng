@@ -1,0 +1,13 @@
+<ion-slide-box active-slide="myActiveSlide">
+    <ion-slide ng-repeat="item in bgs" class="guide-welcome4">
+        <div class="box ">
+            <img src="{{imgPath+item.img}}" class="img-responsive"/>
+        </div>
+        <a ng-if="$last" href="{{url}}">
+            <img src="{{imgPath+'experience.png'}}" class="guide-experience"/>
+        </a>
+    </ion-slide>
+</ion-slide-box>
+<a href="{{url}}">
+    <img src="{{imgPath+'jump.png'}}" class="guide-jump"/>
+</a>

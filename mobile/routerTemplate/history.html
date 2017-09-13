@@ -1,0 +1,16 @@
+<ion-view title="浏览历史">
+    <ion-content has-header="true">
+
+        <yunfeng-history></yunfeng-history>
+
+    </ion-content>
+</ion-view>
+
+<script>
+    $(function () {
+        $('.accordion-heading').click(function () {
+            $(this).siblings().toggle();
+            $(this).parent('.accordion-group').siblings().find('.accordion-body').hide();
+        });
+    });
+</script>

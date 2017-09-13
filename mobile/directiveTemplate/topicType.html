@@ -1,0 +1,10 @@
+<ion-content class="has-banner">
+    <div class="list firstPageContent">
+        <a ng-repeat="item in topicTypes" class="item item-icon-left item-icon-right" href="{{item.href}}">
+            <i class="icon"><img src="{{imgPath+item.icon}}"/></i>
+            <span>{{item.name}}</span>
+            <i class="icon ion-ios-arrow-right"></i>
+        </a>
+
+    </div>
+</ion-content>
